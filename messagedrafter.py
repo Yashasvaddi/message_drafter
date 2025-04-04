@@ -15,7 +15,7 @@ def caption():
     genai.configure(api_key=api_key)
     model = genai.GenerativeModel('gemini-2.0-flash')
 
-    user_text = st.text_area("Enter your text", height=70)
+    user_text = st.text_area("Enter your keywords", height=70)
 
     if st.button("Try it?") and user_text:
         with st.spinner("Cooking up fresh captions"):
