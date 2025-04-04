@@ -18,7 +18,7 @@ user_text = st.text_area("Enter your text", height=70)
 
 if user_text:
     with st.spinner("Cooking up fresh captions"):
-        folder_path = "message_drafter\\images"
+        folder_path = r"message_drafter\\images"
         image_exts = (".png", ".jpg", ".jpeg", ".webp", ".bmp")
 
         image_paths = sorted([
